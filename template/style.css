@@ -1,0 +1,190 @@
+:root {
+    --bg-dark: #121212;
+    --accent-gold: #c5a059;
+    --text-light: #e0e0e0;
+    --card-dark: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Header & Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--accent-gold);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 3rem 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero h1 span {
+    color: var(--accent-gold);
+    font-style: italic;
+}
+
+.video-placeholder {
+    width: 80%;
+    height: 450px;
+    margin: 0 auto;
+    background: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1200') center/cover;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.play-button {
+    width: 70px;
+    height: 70px;
+    background: rgba(197, 160, 89, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Stats Section */
+.stats {
+    padding: 5rem 10%;
+    background-color: white;
+    color: black;
+    text-align: left;
+}
+
+.stats h2 {
+    font-size: 2.5rem;
+    max-width: 600px;
+    margin-bottom: 1rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.stat-item .number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Experience Section */
+.experience {
+    padding: 5rem 10%;
+    background-color: var(--bg-dark);
+}
+
+.experience h2 span {
+    color: var(--accent-gold);
+}
+
+.product-row {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.product-img img {
+    width: 350px;
+    border: 2px solid var(--accent-gold);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.btn-gold {
+    background-color: var(--accent-gold);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/* Footer / Subscribe */
+.footer {
+    padding: 5rem 10%;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.subscribe-form {
+    margin: 2rem 0;
+}
+
+.subscribe-form input {
+    padding: 12px 20px;
+    width: 300px;
+    border-radius: 25px 0 0 25px;
+    border: none;
+}
+
+.subscribe-form button {
+    padding: 12px 30px;
+    border-radius: 0 25px 25px 0;
+    border: none;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .stats-grid, .product-row {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+    .hero h1 { font-size: 2.5rem; }
+}
