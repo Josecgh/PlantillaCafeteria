@@ -19,6 +19,9 @@
         font-style: normal;
         font-weight: 400; 
         font-size: 1rem;
+        background-image: url(../img/bg-logos.jpg);
+        background-color: rgba(255, 255, 255, 0.8); 
+        background-blend-mode:lighten;
     }
 
     h1{
@@ -73,7 +76,28 @@
     hr{
         width: 80%;
     }
+        /* Habilita scroll suave para anclas internas */
+        html { scroll-behavior: smooth; }
 
+        /* Estilos del checkbox en el formulario (alineación en una sola línea) */
+        .form-group.form-checkbox{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: nowrap;
+        }
+        .form-group.form-checkbox label{
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        .form-group.form-checkbox a{
+            color: inherit;
+            text-decoration: underline;
+        }
+        .form-group.form-checkbox input[type="checkbox"]{
+            width: 1.05rem;
+            height: 1.05rem;
+        }
     .hero{
         background-image: url('../img/hero-banner2.jpg');
         background-size: cover;
@@ -133,8 +157,12 @@
     }
 
     .accent{
+        color:var(--color-azul);
+    }
+    .accent-2{
         color:var(--color-dorado);
     }
+    
 
     .hero-content{
         max-width: 750px;
