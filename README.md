@@ -13,6 +13,9 @@ Diseñar una Landing Page que resuelva 4 secciones clave:
 
 ¿Quién lo hace? (Equipo: Nombres, roles y fotos).
 
+
+
+
 ¿Te unes? (Formulario: Nombre y Email para suscripción).
 
 Cronograma de Trabajo

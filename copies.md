@@ -8,13 +8,13 @@ Subtítulo: El primer espacio de coworking donde el Pair Programming se hace con
 
 Imagen impactante: Un primer plano en alta calidad de un gato descansando sobre una MacBook Pro (con stickers de Linux/React), con un café latte con arte de un "Octocat" al lado.
 
-¿Qué hacemos? (Servicios/Beneficios) Usa iconos minimalistas estilo Line Art o Material Design.BeneficioTítuloDescripción
+¿Qué hacemos? (Servicios/Beneficios) Usa iconos minimalistas estilo Line Art o Material Design. BeneficioTítuloDescripción
 
-☕ High-Availability CoffeeFuel para tu códigoGranos de especialidad con tueste local para que tus neuronas compilen a la primera.
+☕ High-Availability CoffeeFuel para tu código Granos de especialidad con tueste local para que tus neuronas compilen a la primera.
 
-🐈 Anti-Stress DebuggingRubber Ducking Felino¿Atascado en un bug? Cuéntale tu problema a un gato. Es científicamente más tierno que un pato de goma.
+🐈 Anti-Stress DebuggingRubber Ducking Felino ¿Atascado en un bug? Cuéntale tu problema a un gato. Es científicamente más tierno que un pato de goma.
 
-💻 Zero-Latency WorkspacesEntorno OptimizadoSillas ergonómicas, fibra simétrica y suficientes enchufes para todos tus periféricos.
+💻 Zero-Latency Workspaces Entorno Optimizado Sillas ergonómicas, fibra simétrica y suficientes enchufes para todos tus periféricos.
 
 ¿Quién lo hace? (El Equipo)
 Para esta sección, sugiero usar un formato de "User Profile" o "Card" que parezca una ficha de GitHub.
@@ -22,6 +22,11 @@ Para esta sección, sugiero usar un formato de "User Profile" o "Card" que parez
     Nombre del Fundador/a: (Ej. Ana Code) — Lead Developer & Cat Whisperer.
     El Barista: (Ej. Marc Espresso) — DevOps (Drinks & Operations).
     El CTO (Chief Tail Officer): "Pelusa" — Experto en interrupciones de reuniones por Zoom y control de calidad de siestas.
+
+-Alex   : Designer      : "/"  
+-Jose   : Developer     : "/"
+-Javier : Arquitectura  : "/"
+-Daniel : Developer     : "/"
 
     Tip: Pon las fotos del equipo humano con sus gatos favoritos para generar confianza.
 
