@@ -33,9 +33,13 @@
 .overlay.active {
     display: block;
 }
+
 #sidebar{
     display: block;
 }
+
+
+
 /* Botones y links (estética básica) */
 .menu-links-sidebar { list-style: none; padding: 0; margin-top: 50px; }
 .menu-links-sidebar li { padding: 15px 0; text-align: center}

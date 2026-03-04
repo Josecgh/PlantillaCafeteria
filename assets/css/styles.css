@@ -29,10 +29,42 @@
     opacity: 0.95;
 }
 
-@media (max-width: 480px) {
-    .hero { padding: 1.25rem; }
-}
-@media (min-width: 768px) {
-    
+    @media (max-width: 480px) {
+        .hero { padding: 1.25rem; }
+    }
+    .menu{
+        display: none;
+    }
+    #openMenu{
+        display: flex;
+    }
+
+
+
+@media (min-width: 800px) {
+    /* menu superior */
+    .menu{
+        display:inline
+    }
+
+    #openMenu{
+        display: none;
+    }
+
+    .menu ul{
+        flex-direction: row;
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        font-size: 1.5rem;
+        gap:15px;
+
+    }
+    .menu li a:hover{
+        text-decoration:underline;
+    }
+    .menu li a{
+        text-decoration: none;
+    }
 }
 
