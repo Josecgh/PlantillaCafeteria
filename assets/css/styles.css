@@ -1,6 +1,7 @@
     .hero{
         background-color: red;
     }
+
     .hero{
         background-image: url('../img/hero-banner2.png');
         background-size: cover;
@@ -39,6 +40,21 @@
     #sidebar{
         display: none;
     }
+
+    hr{
+        width: 80%;
+    }
+
+    .quienes-somos{ 
+        padding: 20px 20px;
+    }
+    .quienes-somos .container(){
+
+    }
+    .quienes-somos h2{ padding-top: 20px; text-align: center; }
+
+    
+
 @media (min-width: 800px) {
     /* menu superior */
     .menu{

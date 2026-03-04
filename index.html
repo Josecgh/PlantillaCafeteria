@@ -7,10 +7,19 @@
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="/assets/css/sidebar.css">
-    <!--<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        
+        .italiana-regular {
+            font-family: "Italiana", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
         header{
             display: flex;
             justify-content: space-between;
@@ -53,7 +62,7 @@
         <img class="btn-open icon-menu" id="openMenu" src="assets/img/icon-menu.png" alt="menu mobile" width="40">
         <nav class="menu" aria-label="Navegación principal">
             <ul>
-                <li><a href="#quienes_somos">Quiénes somos</a></li>
+                <li><a href="#nosotros">Quiénes somos</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#equipo">Equipo</a></li>
                 <li><a href="#contacto">Contacto</a></li>
@@ -64,8 +73,15 @@
         <section id="inicio" class="hero" role="region" aria-label="Hero - Bienvenida">
             <div class="hero-content">
                 <h1 class="hero-title">git commit -m <spam class="greenyellow"> "mejorar mi estado de ánimo"</spam></h1>
-                <p class="hero-subtitle">El primer espacio de coworking donde el Pair Programming se hace con cuatro patas . Café de especialidad, internet de alta velocidad y gatos rescatados listos para revisar tu código (o dormir sobre tu teclado)</p>
+                <p class="hero-subtitle">No somos solo un café; somos el root de tu bienestar</p>
             </div>
+        </section>
+        
+        <section class="quienes-somos" id="nosotros">
+            <h2>¿Quiénes somos?</h2>
+            <hr>
+            <p>El primer espacio de coworking donde el Pair Programming se hace con cuatro patas. Café de especialidad, internet de alta velocidad y gatos rescatados listos para revisar tu código (o dormir sobre tu teclado).</p>
+            <p>Humanizar el desarrollo de software a través de la oxitocina felina. </p>
         </section>
 
         <section id="servicios">
@@ -95,7 +111,7 @@
         
         <ul class="menu-links-sidebar">
             <li><img src="/assets/img/logo.png" width="100%" alt="logo Git Cat" > </li>
-            <li><a href="#quienes_somos">Quiénes somos</a></li>
+            <li><a href="#nosotros">Quiénes somos</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#equipo">Equipo</a></li>
             <li><a href="#contacto">Contacto</a></li>

@@ -5,7 +5,7 @@
     left: 0;
     width: 50%;
     height: 100%;
-    background-color:brown;
+    background-color:white;
     color: whitesmoke;
     transition: transform 0.3s ease; /* Animación suave */
     transform: translateX(-100%); /* Escondido por defecto */
@@ -42,6 +42,7 @@
 
 /* Botones y links (estética básica) */
 .menu-links-sidebar { list-style: none; padding: 0; margin-top: 50px; }
-.menu-links-sidebar li { padding: 15px 0; text-align: center}
-.menu-links-sidebar a { color: var(--color-text-primary); text-decoration: none; font-size: 1.2rem; ; }
-.btn-close { background: none; border: none; color: var(--color-text-primary); font-size: 2rem; cursor: pointer; position: absolute; right: 20px; }
+.menu-links-sidebar li { padding: 15px 0; text-align: center; }
+.menu-links-sidebar a { color: black; text-decoration: none; font-size: 1.2rem; }
+.menu-links-sidebar p { color: black;}
+.btn-close { background: none; border: none; color: black; font-size: 2rem; cursor: pointer; position: absolute; right: 20px; }
