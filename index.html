@@ -54,6 +54,15 @@
         .hero-content p{
             color:white;
         }
+
+        footer {
+            background-color: rgb(30, 29, 29);
+            color: blanchedalmond;
+        }
+
+        footer .copy, .contact-title {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -93,14 +102,25 @@
             <h2>Sobre nosotros</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus mollitia omnis laborum esse tempore maxime earum libero expedita atque corrupti! Laudantium molestiae dolorem incidunt cumque earum. Reiciendis et est recusandae.</p>
         </section>
-        <section id="contactenos">
-            <h2>Contactenos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat alias non illum quasi, corporis, nostrum velit dicta iste veritatis voluptatibus amet totam accusantium perspiciatis delectus aliquid aspernatur dolor. Quam.</p>
-        </section>
+        
     </main>
 
-    <footer id="legal">
-        <p>&copy; 2026 Plantilla Cafetería. Todos los derechos reservados.</p>
+    <footer>
+        <form id="contactenos" class="form-container">
+            <h2 class="contact-title">Contáctenos</h2>
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar mensaje</button>
+        </form>
+        <p class="copy">&copy; 2026 Plantilla Cafetería. Todos los derechos reservados.</p>
     </footer>
     <nav id="sidebar" class="sidebar">
         <button id="closeMenu" class="btn-close">×</button>
