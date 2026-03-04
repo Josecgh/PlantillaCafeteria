@@ -230,6 +230,7 @@ html, body {
     form .submit-btn {
         width: 100%;
         padding: 14px;
+        background-color: var(--color-marron-claro);
         color: white;
         border: none;
         border-radius: 10px;
