@@ -22,7 +22,7 @@ html, body {
     }
 
     .hero{
-        background-image: url('../img/hero-banner2.png');
+        background-image: url('../img/hero-banner2.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -59,7 +59,7 @@ html, body {
         font-family: "Italiana", sans-serif;
         font-size: 64px;
         font-style: normal;
-        font-weight: 400;
+        font-weight:bold;
         line-height: normal;
         text-align: center;
     }
