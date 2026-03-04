@@ -8,18 +8,30 @@ El Reto
 Diseñar una Landing Page que resuelva 4 secciones clave:
 
 ¿Quiénes somos? (Hero: Misión + Imagen impactante).
+
 ¿Qué hacemos? (Idea: 3 beneficios o servicios con iconos).
+
 ¿Quién lo hace? (Equipo: Nombres, roles y fotos).
+
 ¿Te unes? (Formulario: Nombre y Email para suscripción).
+
 Cronograma de Trabajo
 Iteración 1. Concepto y Estructura (Arquitectura)
+
 Elección de la startup y definición de la "Misión". Creación de un Moodboard (estilo visual) en Figma.
+
 Dibujo de Wireframes de baja fidelidad (sin colores ni fotos, solo cajas). Definición de la jerarquía: ¿Qué debe ver el usuario primero?
+
 Objetivo: Tener el esqueleto de la página decidido.
+
 Iteración 2. Estética y Accesibilidad (Diseño Hi-Fi)
+
 Aplicación de color y tipografía. Uso de la Hoja de Recursos para asegurar que el contraste es accesible desde el minuto uno.
+
 Selección de imágenes e iconos inclusivos. Diseño del formulario con etiquetas claras.
+
 Objetivo: Tener el diseño visual completo y validado con el plugin de contraste.
+
 Iteración 3. Interactividad y Presentación (Prototipado)
 Conectar los botones. Hacer que el menú de navegación funcione (scroll a secciones). Diseño de la versión Mobile (adaptación del contenido).
 Revisión final del Checklist y ensayo de la presentación (10 min por grupo).

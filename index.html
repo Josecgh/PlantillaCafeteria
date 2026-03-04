@@ -3,29 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plantilla Cafetería</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Git Cat</title>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/assets/css/sidebar.css">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            height: 100px;   
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .menu{
+            display: none;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Plantilla Cafetería</h1>
-        <nav aria-label="Navegación principal">
+        <img src="/assets/img/logo.png" height="65" alt="logo Git Cat" > 
+        <img class="btn-open icon-menu" id="openMenu" src="assets/img/icon-menu.png" alt="menu mobile" width="40">
+        <nav class="menu" aria-label="Navegación principal">
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#menu">Menú</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#quienes_somos">Quiénes somos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#equipo">Equipo</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <section id="inicio">
-            <h2>Bienvenido</h2>
-            <p>Contenido principal de la cafetería.</p>
+        <section id="inicio" class="hero" role="region" aria-label="Hero - Bienvenida">
+            <div class="hero-content">
+                <h2 class="hero-title">Bienvenido a nuestra cafetería</h2>
+                <p class="hero-subtitle">Sabores auténticos, ambiente acogedor y pasión por el café. Descubre nuestro menú y únete a la comunidad.</p>
+            </div>
         </section>
 
-        <section id="menu">
+        <section id="servicios">
             <h2>Menú</h2>
             <article>
                 <h3>Producto destacado</h3>
@@ -47,5 +72,20 @@
     <footer id="contacto">
         <p>&copy; 2026 Plantilla Cafetería. Todos los derechos reservados.</p>
     </footer>
+    <nav id="sidebar" class="sidebar">
+        <button id="closeMenu" class="btn-close">×</button>
+        
+        <ul class="menu-links-sidebar">
+            <li><img src="/assets/img/logo.png" width="100%" alt="logo Git Cat" > </li>
+            <li><a href="#quienes_somos">Quiénes somos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><hr></li>
+            <li><p>El primer espacio de coworking donde el Pair Programming se hace con cuatro patas.</p></li>
+        </ul>
+    </nav>
+    <div id="overlay" class="overlay"></div>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>
