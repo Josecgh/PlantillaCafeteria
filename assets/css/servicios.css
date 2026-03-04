@@ -1,0 +1,17 @@
+.servicios__cards {
+   display: grid;
+   gap: 1rem;
+}
+
+.servicios__card {
+   border: 3px solid black;
+}
+.servicios__card-header {
+   display: flex;
+}
+
+@media (min-width: 800px) {
+   .servicios__cards {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
