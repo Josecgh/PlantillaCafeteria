@@ -10,15 +10,68 @@
 
 }
 
-/* global reset to remove default browser white gaps */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
+    /* global reset to remove default browser white gaps */
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 400; 
+        font-size: 1rem;
+    }
 
-.hero{
-        background-color: red;
+    h1{
+        font-family: "Italiana", sans-serif;
+        font-size: 64px;
+        font-style: normal;
+        font-weight:bold;
+        line-height: normal;
+        text-align: center;
+    }
+
+    h2{
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding-top: 20px; text-align: center; 
+    }
+
+    h3{
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    p{
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+
+    img{
+        border-radius: 20px;
+        margin: 40px 0px;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        height: 100px;   
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    hr{
+        width: 80%;
     }
 
     .hero{
@@ -33,6 +86,7 @@ html, body {
         /* Añade un overlay oscuro si el texto es difícil de leer */
         background-color: rgba(0, 0, 0, 0.7); 
         background-blend-mode: multiply;
+        padding: 1.25rem; 
     }
 
     .hero .hero-title {
@@ -40,6 +94,7 @@ html, body {
         margin: 0 0 0.5rem;
         line-height: 1.05;
     }
+
     .hero .hero-subtitle {
         font-size: clamp(1rem, 2.2vw, 1.25rem);
         margin: 0;
@@ -47,71 +102,70 @@ html, body {
         opacity: 0.95;
     }
 
-
-    body{
-        font-family: "Inter", sans-serif;
-        font-style: normal;
-        font-weight: 400; 
-        font-size: 16px;
-    }
-
-    h1{
-        font-family: "Italiana", sans-serif;
-        font-size: 64px;
-        font-style: normal;
-        font-weight:bold;
-        line-height: normal;
-        text-align: center;
-    }
-    h2{
-        font-family: Inter;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-    }
-    h3{
-        font-family: Inter;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-    }
-    p{
-        font-family: Inter;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-    h4{}
-    h5{}
-    h6{}
-
-    .hero { padding: 1.25rem; }
-
     .menu{
         display: none;
     }
+    
+    .img-fluid{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .spacer{
+        height: 80px;
+        background-image: url(../img/bg.png);
+    }
+
+    .menu li  { padding: 15px 0; text-align: center; }
+    .menu a { color: var(--color-marron-oscuro); text-decoration: none; font-size: 1.5rem; }
+    .menu a:hover{ color: var(--color-marron-claro)}
+
     #openMenu{
         display: flex;
     }
+
     #sidebar{
         display: none;
     }
 
-    hr{
-        width: 80%;
+    .copy{
+        padding-bottom: 20px;
     }
 
-    .quienes-somos{ 
+    .accent{
+        color:var(--color-dorado);
+    }
+
+    .hero-content{
+        max-width: 750px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+
+    .hero-content p{
+        color:white;
+    }
+
+    footer {
+        background-color: rgb(30, 29, 29);
+        color: blanchedalmond;
+    }
+
+    .nosotros{ 
         padding: 20px 20px;
     }
-    
-    .quienes-somos .container(){
 
+
+    .container{
+        max-width: 768px;
+        margin: auto;
     }
-    .quienes-somos h2{ padding-top: 20px; text-align: center; }
+
+
+    
 
     
 

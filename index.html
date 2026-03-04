@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Cat</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="assets/css/sidebar.css">
@@ -14,49 +16,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        .italiana-regular {
-            font-family: "Italiana", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        header{
-            display: flex;
-            justify-content: space-between;
-            align-items: center; 
-            height: 100px;   
-            padding-left: 20px;
-            padding-right: 20px;
-        }
         
-
-        
-
-        .greenyellow{
-            color:greenyellow;
-        }
-
-        .hero-content{
-            max-width: 750px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin: auto;
-        }
-
-        .hero-content p{
-            color:white;
-        }
-
-        footer {
-            background-color: rgb(30, 29, 29);
-            color: blanchedalmond;
-        }
-
-        footer .copy, .contact-title {
-            text-align: center;
-        }
     </style>
 </head>
 <body>
@@ -69,51 +29,60 @@
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#equipo">Equipo</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-            </ul>git reset hard
+            </ul>
         </nav>
     </header>
     <main>
         <section id="inicio" class="hero" role="region" aria-label="Hero - Bienvenida">
             <div class="hero-content">
-                <h1 class="hero-title">git commit &minus;m <spam class="greenyellow"> "mejorar mi estado de ánimo"</spam></h1>
+                <h1 class="hero-title">git commit &minus;m <spam class="accent"> "mejorar mi estado de ánimo"</spam></h1>
                 <p class="hero-subtitle">No somos solo un café; somos el root de tu bienestar</p>
             </div>
         </section>
 
-        <section class="quienes-somos" id="nosotros">
-            <h2>¿Quiénes somos?</h2>
-            <hr>
-            <p>El primer espacio de coworking donde el Pair Programming se hace con cuatro patas. Café de especialidad, internet de alta velocidad y gatos rescatados listos para revisar tu código (o dormir sobre tu teclado).</p>
-            <p>Humanizar el desarrollo de software a través de la oxitocina felina. </p>
+        <section class="nosotros" id="1uienes">
+            <div class="container">
+                <h2>¿Quiénes somos?</h2>
+                <hr>
+                <p>El primer espacio de coworking donde el Pair Programming se hace con cuatro patas. Café de especialidad, internet de alta velocidad y gatos rescatados listos para revisar tu código (o dormir sobre tu teclado).</p>
+                <p>Humanizar el desarrollo de software a través de la oxitocina felina. </p>
+                <img src="assets/img/Gemini_Generated_Image_wv9p48wv9p48wv9p.png" width="100%" > 
+            </div>
         </section>
-
-        <section id="servicios">
-            <h2>servicios</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus mollitia omnis laborum esse tempore maxime earum libero expedita atque corrupti! Laudantium molestiae dolorem incidunt cumque earum. Reiciendis et est recusandae.</p>
+        <div class="spacer"></div>
+        <section id="servicios" class="servicios">
+            <div class="container">
+                <h2>Servicios</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus mollitia omnis laborum esse tempore maxime earum libero expedita atque corrupti! Laudantium molestiae dolorem incidunt cumque earum. Reiciendis et est recusandae.</p>
+            </div>
         </section>
-
-        <section id="nosotros">
-            <h2>Sobre nosotros</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus mollitia omnis laborum esse tempore maxime earum libero expedita atque corrupti! Laudantium molestiae dolorem incidunt cumque earum. Reiciendis et est recusandae.</p>
+        <div class="spacer"></div>
+        <section id="equipo" class="equipo">
+            <div class="container">
+                <h2>Sobre nosotros</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus mollitia omnis laborum esse tempore maxime earum libero expedita atque corrupti! Laudantium molestiae dolorem incidunt cumque earum. Reiciendis et est recusandae.</p>
+            </div>
         </section>
         
     </main>
 
     <footer>
-        <form id="contactenos" class="form-container">
-            <h2 class="contact-title">Contáctenos</h2>
-            <div class="form-group">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-            </div>
-
-            <button type="submit" class="submit-btn">Enviar mensaje</button>
-        </form>
+        <div class="container">
+            <form id="contactenos" class="form-container">
+                <h2>Suscríbete a nuestra <span class="accent">main branch</span></h2>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                </div>
+                <button type="submit" class="submit-btn">Deploy Suscripción</button>
+            </form>
+        </div>
         <p class="copy">&copy; 2026 Plantilla Cafetería. Todos los derechos reservados.</p>
     </footer>
     <nav id="sidebar" class="sidebar">
