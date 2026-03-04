@@ -168,7 +168,12 @@
         max-width: 768px;
         margin: auto;
     }
-
+    .container img,.menu-links-sidebar img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    
             .form-group.form-checkbox{
             display: flex;
             align-items: center;
