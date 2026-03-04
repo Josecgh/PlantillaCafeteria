@@ -146,7 +146,7 @@
     }
 
     .hero-content p{
-        color:white;
+        color: var(--color-blanco)
     }
 
     footer {
