@@ -3,9 +3,12 @@
    gap: 1rem;
    margin-top: 40px;
 }
-
-.servicios__card {
+.servicios__card:hover {
    background-color: rgba(0, 0, 0, 0.7);
+   transition: 0.3s;
+}
+.servicios__card {
+   background-color: rgba(0, 0, 0, 0.4);
    background-blend-mode: multiply;
    color: var(--color-blanco);
    border-radius: 1rem;
@@ -18,6 +21,7 @@
    background-size: auto 100%;
    background-position: center;
    background-repeat: no-repeat;
+   
 }
 
 .servicios__card:nth-child(1) {
@@ -31,11 +35,11 @@
 }
 
 .servicios__card-header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
    h3 {
-      text-align: right;
+      padding-left: 5px;
    }
 }
 

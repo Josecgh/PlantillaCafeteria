@@ -1,227 +1,220 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Git Cat</title>
-   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
-   <link rel="stylesheet" href="assets/css/normalize.css">
-   <link rel="stylesheet" href="assets/css/styles.css">
-   <link rel="stylesheet" href="./assets/css/servicios.css">
-   <link rel="stylesheet" media="screen and (max-width: 768px)" href="assets/css/sidebar.css">
-   <link rel="stylesheet" href="./assets/css/servicios.css">
-
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet">
-
-   <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap"
-      rel="stylesheet">
-
-   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Cat</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/servicios.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="assets/css/sidebar.css">
+    <link rel="stylesheet" href="./assets/css/servicios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
-
 <body>
-   <header>
-      <img src="assets/img/logo.png" height="65" alt="logo Git Cat">
-      <img class="btn-open icon-menu" id="openMenu" src="assets/img/icon-menu.png" alt="menu mobile" width="40">
-      <nav class="menu" aria-label="Navegación principal">
-         <ul>
+    <header>
+        <img src="assets/img/logo.png" height="65" alt="logo Git Cat">
+        <img class="btn-open icon-menu" id="openMenu" src="assets/img/icon-menu.png" alt="menu mobile" width="40">
+        <nav class="menu" aria-label="Navegación principal">
+            <ul>
+                <li><a href="#nosotros">Quiénes somos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="hero" aria-label="Hero - Bienvenida">
+            <div class="hero-content">
+                <h1 class="hero-title">git commit &minus;m <span class="accent-2"> "mejorar mi estado de ánimo"</span></h1>
+                <p class="hero-subtitle">No somos solo un café; somos el root de tu bienestar</p>
+                <p class="hero-subtitle">Humanizar el desarrollo de software a través de la oxitocina felina. </p>
+            </div>
+        </section>
+        <section class="nosotros" id="nosotros">
+            <div class="container">
+                <h2>¿Quiénes somos?</h2>
+                <hr>
+                <p>El primer espacio de coworking donde el <span class="accent-3">Pair Programming</span> se hace con
+                cuatro patas. Café de especialidad, internet de alta velocidad y gatos rescatados listos para revisar tu
+                código (o dormir sobre tu teclado).</p>
+                <p>GitCat no nació de un algoritmo, sino de la necesidad de un entorno de trabajo más humano. Somos un
+                equipo multidisciplinario dedicado a optimizar tu flujo de trabajo mediante <span class="accent-3">interfases</span>
+                de cuatro patas. Desde el control de calidad de nuestros granos de café hasta la gestión de nuestra
+                comunidad gatuna, trabajamos en el <span class="accent-3">Core</span> de lo que importa: que programes
+                mejor, rodeado de quienes más saben de relajación.</p>
+                <img src="assets/img/Gemini_Generated_Image_wv9p48wv9p48wv9p.jpg" alt="cafe con gatos" width="651"
+                height="355">
+            </div>
+        </section>
+        <div class="spacer"></div>
+        <!-- <section id="servicios" class="servicios"> -->
+        <div class="container">
+            <section id="servicios">
+                <h2>¿Qué hacemos?</h2>
+                <hr>
+                <!-- (Servicios/Beneficios) -->
+                <div class="servicios__cards">
+                <div class="servicios__card">
+                    <div class="servicios__card-header">
+                        <span class="material-symbols-outlined accent">coffee_maker</span>
+                        <h3>High-Availability Coffee</h3>
+                    </div>
+                    <div class="servicios__card-body">
+                        <h4>Fuel para tu código.</h4>
+                        <p>
+                            Granos de especialidad con tueste local para que tus neuronas compilen a la primera.
+                        </p>
+                    </div>
+                </div>
+                <div class="servicios__card">
+                    <div class="servicios__card-header">
+                        <span class="material-symbols-outlined accent">person_heart</span>
+                        <h3>Debugging Rubber</h3>
+                    </div>
+                    <div class="servicios__card-body">
+                        <h4>Ducking Felino</h4>
+                        <p>¿Atascado en un bug? Cuéntale tu problema a un gato. Es científicamente más tierno que un pato de goma.</p>
+                    </div>
+                </div>
+                <div class="servicios__card">
+                    <div class="servicios__card-header">
+                        <span class="material-symbols-outlined accent">laptop_chromebook  </span>  
+                        <h3>Zero-Latency</h3>
+                    </div>
+                    <div class="servicios__card-body">
+                        <h4>Workspaces</h4>
+                        <p>Entorno Optimizado. Sillas ergonómicas, fibra simétrica y suficientes enchufes para todos tus periféricos.</p>
+                    </div>
+                </div>
+                </div>
+                <img src="assets/img/Gemini_Generated_Image_xgtam3xgtam3xgta.jpg" alt="Cat debuging" width="651"
+                height="355">
+            </section>
+        </div>
+        <div class="spacer"></div>
+
+        <section id="equipo" class="equipo">
+            <div class="container">
+                <h2><span class="accent">Beta Testing:</span> Open Source Café, Closed Access Coworking</h2>
+                <hr>
+                <p>Estamos en pleno despliegue. Mientras nuestra barra de café está abierta para que cualquier dev venga a por su dosis de cafeína, el área de membresías está recibiendo sus últimos commits. El acceso al coworking será restringido para garantizar que el Uptime de tu concentración sea del 100%. Suscríbete para ser notificado cuando hagamos el merge a main.</p>
+                <img src="assets/img/opensourcecafe.png" alt="Cat debuging" width="651"
+                height="355">
+            </div>
+        </section>
+        <div class="spacer"></div>
+
+        <section id="equipo" class="equipo">
+            <div class="container">
+                <!-- EJEMPLO Francisco
+                    3. ¿Quién lo hace? (El Equipo)
+                    Para esta sección, sugiero usar un formato de 
+                        "User Profile" o 
+                        "Card" que parezca una ficha de GitHub.
+
+                    Nombre del Fundador/a: (Ej. Ana Code) — Lead Developer & Cat Whisperer.
+                    El Barista: (Ej. Marc Espresso) — DevOps (Drinks & Operations).
+                    El CTO (Chief Tail Officer): "Pelusa" — Experto en interrupciones de reuniones por Zoom y control de calidad de siestas.
+                    Tip: Pon las fotos del equipo humano con sus gatos favoritos para generar confianza.
+                -->
+                <!--EJEMPLO 2
+                        ara la sección "¿Quién lo hace?", el tono debe ser una mezcla de profesionalismo técnico y esa "obsesión" saludable que tenemos los devs por los sistemas bien optimizados.
+
+    Aquí tienes dos opciones de copy según la personalidad que quieras darle a la marca:
+
+    Opción 1: El enfoque de "Sistemas y Mantenimiento"
+    Este copy trata al equipo humano como el backend que mantiene todo funcionando, ideal si quieres un tono divertido pero estructurado.
+
+    "Detrás de cada taza de café y cada ronroneo, hay un equipo de humanos apasionados por el despliegue de experiencias. Somos desarrolladores, baristas y cuidadores felinos que creemos que la mejor arquitectura es la que incluye una dosis de cafeína y un gato en el regazo. Nos encargamos del mantenimiento preventivo (mimos), el escalado de felicidad (café de especialidad) y de asegurar que el tiempo de actividad de nuestros michis sea siempre nuestra prioridad."
+
+    Opción 2: El enfoque de "Cultura Dev" (Más breve y directo)
+    Ideal si quieres usar un estilo que recuerde a un archivo README.md o a la filosofía de una startup.
+
+
+
+    Sugerencia para los perfiles del equipo:
+    Para que visualmente sea increíble, puedes usar una estructura de "Stack Tecnológico" para cada miembro:
+
+    Fundador/a: Stack: React, Python & Cat Treats Expert.
+
+    Barista: Stack: Espresso, Latte Art & Zero-Latency Service.
+
+    Gato Residente: Stack: Naps, Purring & Keyboard Interruption.
+                        -->
+                <h2>El Equipo</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus mollitia omnis laborum esse tempore
+                maxime
+                earum libero expedita atque corrupti! Laudantium molestiae dolorem incidunt cumque earum. Reiciendis
+                et
+                est
+                recusandae.</p>
+                <img src="assets/img/Gemini_Generated_Image_ectdazectdazectd.jpg" alt="Collares" width="651" height="355">
+            </div>
+        </section>
+
+    </main>
+    <footer id="contacto">
+        <div class="container">
+            <h2>Suscríbete a nuestra <span class="accent">main branch</span></h2>
+            <hr  class="laser">
+            <p>Recibe actualizaciones sobre nuevos gatos, eventos de <span class="accent">networking</span> y promociones
+                de "Happy Hour" para cuando el <span class="accent">deploy</span> sale mal.</p>
+            <form id="contactenos" class="form-container">
+                <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                </div>
+                <!-- Nuevo: checkbox de aceptación de políticas -->
+                <div class="form-group form-checkbox">
+                <input type="checkbox" id="acceptPrivacy" name="acceptPrivacy" required>
+                <label for="acceptPrivacy">Acepto las <a href="#politicas" target="_blank" rel="noopener">Políticas de
+                        privacidad y GDPR</a></label>
+                </div>
+                <button type="submit" class="submit-btn">Deploy Suscripción</button>
+            </form>
+        </div>
+        <p class="copy">&copy; 2026 GitCat. Todos los derechos reservados.</p>
+    </footer>
+    <nav id="sidebar" class="sidebar">
+        <button id="closeMenu" class="btn-close">×</button>
+
+        <ul class="menu-links-sidebar">
+            <li><img src="assets/img/logo.png" width="100" alt="logo Git Cat"> </li>
             <li><a href="#nosotros">Quiénes somos</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#equipo">Equipo</a></li>
             <li><a href="#contacto">Contacto</a></li>
-         </ul>
-      </nav>
-   </header>
-   <main>
-      <section id="inicio" class="hero" aria-label="Hero - Bienvenida">
-         <div class="hero-content">
-            <h1 class="hero-title">git commit &minus;m <span class="accent-2"> "mejorar mi estado de ánimo"</span></h1>
-            <p class="hero-subtitle">No somos solo un café; somos el root de tu bienestar</p>
-            <p class="hero-subtitle">Humanizar el desarrollo de software a través de la oxitocina felina. </p>
-         </div>
-      </section>
-      <section class="nosotros" id="nosotros">
-         <div class="container">
-            <h2>¿Quiénes somos?</h2>
-            <hr>
-            <p>El primer espacio de coworking donde el <span class="accent-3">Pair Programming</span> se hace con
-               cuatro
-               patas. Café de especialidad, internet de alta velocidad y gatos rescatados listos para revisar tu
-               código
-               (o
-               dormir sobre tu teclado).</p>
-
-            <p>GitCat no nació de un algoritmo, sino de la necesidad de un entorno de trabajo más humano. Somos un
-               equipo
-               multidisciplinario dedicado a optimizar tu flujo de trabajo mediante <span
-                  class="accent-3">interfases</span>
-               de cuatro patas. Desde el control de calidad de nuestros granos de café hasta la gestión de nuestra
-               comunidad gatuna, trabajamos en el <span class="accent-3">Core</span> de lo que importa: que programes
-               mejor,
-               rodeado de quienes más saben de relajación.</p>
-            <img src="assets/img/Gemini_Generated_Image_wv9p48wv9p48wv9p.jpg" alt="cafe con gatos" width="651"
-               height="355">
-         </div>
-      </section>
-      <div class="spacer"></div>
-      <!-- <section id="servicios" class="servicios"> -->
-      <div class="container">
-         <section id="servicios">
-            <h2>¿Qué hacemos?</h2>
-            <hr>
-            <!-- (Servicios/Beneficios) -->
-            <div class="servicios__cards">
-               <div class="servicios__card">
-                  <div class="servicios__card-header">
-                     <span class="material-symbols-outlined accent">coffee_maker</span>
-                     <h3>High-Availability Coffee</h3>
-                  </div>
-                  <div class="servicios__card-body">
-                     <p>
-                        Fuel para tu código. Granos de especialidad con tueste
-                        local para que tus neuronas compilen a la primera.
-                     </p>
-                  </div>
-               </div>
-               <div class="servicios__card">
-                  <div class="servicios__card-header">
-                     <span class="material-symbols-outlined accent">person_heart</span>
-                     <h3>Debugging Rubber</h3>
-                  </div>
-                  <div class="servicios__card-body">
-                     <p>
-                        Ducking Felino ¿Atascado en
-                        un bug? Cuéntale tu problema a un gato. Es científicamente más tierno que un pato de goma.
-                     </p>
-                  </div>
-               </div>
-               <div class="servicios__card">
-                  <div class="servicios__card-header">
-                     <span class="material-symbols-outlined accent">laptop_chromebook</span>
-                     <h3>Zero-Latency</h3>
-                  </div>
-                  <div class="servicios__card-body">
-                     <p>
-                        Workspaces. Entorno Optimizado. Sillas ergonómicas, fibra simétrica y suficientes enchufes para
-                        todos tus periféricos.
-                     </p>
-                  </div>
-               </div>
-            </div>
-
-            <img src="assets/img/Gemini_Generated_Image_xgtam3xgtam3xgta.jpg" alt="Cat debuging" width="651"
-               height="355">
-
-         </section>
-      </div>
-
-      <div class="spacer"></div>
-      <section id="equipo" class="equipo">
-         <div class="container">
-            <!-- EJEMPLO Francisco
-                3. ¿Quién lo hace? (El Equipo)
-                Para esta sección, sugiero usar un formato de 
-                    "User Profile" o 
-                    "Card" que parezca una ficha de GitHub.
-
-                Nombre del Fundador/a: (Ej. Ana Code) — Lead Developer & Cat Whisperer.
-                El Barista: (Ej. Marc Espresso) — DevOps (Drinks & Operations).
-                El CTO (Chief Tail Officer): "Pelusa" — Experto en interrupciones de reuniones por Zoom y control de calidad de siestas.
-                Tip: Pon las fotos del equipo humano con sus gatos favoritos para generar confianza.
-            -->
-            <!--EJEMPLO 2
-                    ara la sección "¿Quién lo hace?", el tono debe ser una mezcla de profesionalismo técnico y esa "obsesión" saludable que tenemos los devs por los sistemas bien optimizados.
-
-Aquí tienes dos opciones de copy según la personalidad que quieras darle a la marca:
-
-Opción 1: El enfoque de "Sistemas y Mantenimiento"
-Este copy trata al equipo humano como el backend que mantiene todo funcionando, ideal si quieres un tono divertido pero estructurado.
-
-"Detrás de cada taza de café y cada ronroneo, hay un equipo de humanos apasionados por el despliegue de experiencias. Somos desarrolladores, baristas y cuidadores felinos que creemos que la mejor arquitectura es la que incluye una dosis de cafeína y un gato en el regazo. Nos encargamos del mantenimiento preventivo (mimos), el escalado de felicidad (café de especialidad) y de asegurar que el tiempo de actividad de nuestros michis sea siempre nuestra prioridad."
-
-Opción 2: El enfoque de "Cultura Dev" (Más breve y directo)
-Ideal si quieres usar un estilo que recuerde a un archivo README.md o a la filosofía de una startup.
-
-
-
-Sugerencia para los perfiles del equipo:
-Para que visualmente sea increíble, puedes usar una estructura de "Stack Tecnológico" para cada miembro:
-
-Fundador/a: Stack: React, Python & Cat Treats Expert.
-
-Barista: Stack: Espresso, Latte Art & Zero-Latency Service.
-
-Gato Residente: Stack: Naps, Purring & Keyboard Interruption.
-                    -->
-            <h2>El Equipo</h2>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus mollitia omnis laborum esse tempore
-               maxime
-               earum libero expedita atque corrupti! Laudantium molestiae dolorem incidunt cumque earum. Reiciendis
-               et
-               est
-               recusandae.</p>
-            <img src="assets/img/Gemini_Generated_Image_ectdazectdazectd.jpg" alt="Collares" width="651" height="355">
-         </div>
-      </section>
-
-   </main>
-   <footer id="contacto">
-      <div class="container">
-         <h2>Suscríbete a nuestra <span class="accent">main branch</span></h2>
-         <hr>
-         <p>Recibe actualizaciones sobre nuevos gatos, eventos de <span class="accent">networking</span> y promociones
-            de "Happy Hour" para cuando el <span class="accent">deploy</span> sale mal.</p>
-         <form id="contactenos" class="form-container">
-            <div class="form-group">
-               <label for="name">Nombre</label>
-               <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-            </div>
-            <div class="form-group">
-               <label for="email">Correo electrónico</label>
-               <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-            </div>
-            <!-- Nuevo: checkbox de aceptación de políticas -->
-            <div class="form-group form-checkbox">
-               <input type="checkbox" id="acceptPrivacy" name="acceptPrivacy" required>
-               <label for="acceptPrivacy">Acepto las <a href="#politicas" target="_blank" rel="noopener">Políticas de
-                     privacidad y GDPR</a></label>
-            </div>
-            <button type="submit" class="submit-btn">Deploy Suscripción</button>
-         </form>
-      </div>
-      <p class="copy">&copy; 2026 GitCat. Todos los derechos reservados.</p>
-   </footer>
-   <nav id="sidebar" class="sidebar">
-      <button id="closeMenu" class="btn-close">×</button>
-
-      <ul class="menu-links-sidebar">
-         <li><img src="assets/img/logo.png" width="100" alt="logo Git Cat"> </li>
-         <li><a href="#nosotros">Quiénes somos</a></li>
-         <li><a href="#servicios">Servicios</a></li>
-         <li><a href="#equipo">Equipo</a></li>
-         <li><a href="#contacto">Contacto</a></li>
-         <li>
-            <hr>
-         </li>
-         <li>
-            <p>El primer espacio de coworking donde el Pair Programming se hace con cuatro patas.</p>
-         </li>
-      </ul>
-   </nav>
-   <div id="overlay" class="overlay"></div>
-   <button id="btn-top" class="btn-top" aria-label="Ir al inicio">
-      <img src="assets/img/paw.png" alt="Ir al inicio">
-   </button>
-   <script src="assets/js/scripts.js"></script>
+            <li>
+                <hr>
+            </li>
+            <li>
+                <p>El primer espacio de coworking donde el Pair Programming se hace con cuatro patas.</p>
+            </li>
+        </ul>
+    </nav>
+    <div id="overlay" class="overlay"></div>
+    <button id="btn-top" class="btn-top" aria-label="Ir al inicio">
+        <img src="assets/img/paw.png" alt="Ir al inicio">
+    </button>
+    <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>

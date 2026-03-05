@@ -10,51 +10,7 @@
 
 
     }
-    @keyframes flickerAzulOscuro {
-        0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        text-shadow:
-            0 0 5px var(--color-blanco),
-            0 0 10px var(--color-azul-ocuro),
-            0 0 20px var(--color-azul-ocuro);
-        }
-        20%, 24%, 55% {
-            text-shadow: none;
-        }
-    }
-    @keyframes flickerAzulClaro {
-        0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        text-shadow:
-            0 0 5px var(--color-blanco),
-            0 0 10px var(--color-azul),
-            0 0 20px var(--color-azul);
-        }
-        20%, 24%, 55% {
-            text-shadow: none;
-        }
-    }
-    @keyframes flickerDorado {
-        0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        text-shadow:
-            0 0 5px var(--color-blanco),
-            0 0 10px var(--color-dorado),
-            0 0 20px var(--color-dorado);
-        }
-        20%, 24%, 55% {
-            text-shadow: none;
-        }
-    }
-    @keyframes pulsate {
-    from {
-    text-shadow:
-        0 0 5px var(--color-blanco),
-        0 0 10px var(--color-dorado);
-    }
-    to {
-    text-shadow:
-        0 0 10px var(--color-blanco),
-        0 0 20px var(--color-dorado);
-    }
-    }
+    
 
     /* global reset to remove default browser white gaps */
     html, body {
@@ -68,8 +24,11 @@
         background-image: url(../img/bg-logos.jpg);
         background-color: rgba(255, 255, 255, 0.8); 
         background-blend-mode:lighten;
+        cursor: url('../img/cursor.png'), auto;
     }
-
+a:hover, button:hover, #btn-top:hover, .submit-btn:hover, #acceptPrivacy:hover, #openMenu:hover {
+    cursor: url('../img/pointer.png'), pointer;
+}
     h1{
         font-family: "Italiana", sans-serif;
         font-size: 64px;
@@ -94,6 +53,10 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+    }
+
+    h4{
+        text-align: center;
     }
 
     p{
@@ -206,7 +169,7 @@
         color:var(--color-azul);
         animation: flickerAzulClaro 1.5s infinite alternate;
     }
-    
+
     .accent-2{
         color:var(--color-dorado);
         animation: flickerDorado 1.5s infinite alternate;
@@ -387,3 +350,4 @@
 #btn-top:hover img{
     max-height: calc(100px + 50px);
 }
+

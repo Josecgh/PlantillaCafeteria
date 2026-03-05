@@ -1,0 +1,88 @@
+@keyframes flickerAzulOscuro {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+        0 0 5px var(--color-blanco),
+        0 0 10px var(--color-azul-ocuro),
+        0 0 20px var(--color-azul-ocuro);
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+@keyframes flickerAzulClaro {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+        0 0 5px var(--color-blanco),
+        0 0 10px var(--color-azul),
+        0 0 20px var(--color-azul);
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+@keyframes flickerDorado {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+        0 0 5px var(--color-blanco),
+        0 0 10px var(--color-dorado),
+        0 0 20px var(--color-dorado);
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+@keyframes pulsate {
+from {
+    text-shadow:
+        0 0 5px var(--color-blanco),
+        0 0 10px var(--color-dorado);
+    }
+    to {
+    text-shadow:
+        0 0 10px var(--color-blanco),
+        0 0 20px var(--color-dorado);
+    }
+}
+
+hr.laser {
+  border: none;               /* Quitamos el borde por defecto */
+  height: 2px;                /* Grosor de la línea */
+  background: #111;           /* Color de fondo de la línea (la "oscuridad") */
+  position: relative;
+  overflow: hidden;           /* Para que el brillo no se salga de los bordes */
+  border-radius: 5px;
+}
+
+hr.laser::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150px;               /* Empezamos fuera de la vista a la izquierda */
+  width: 150px;               /* Ancho del "punto de luz" */
+  height: 100%;
+  /* Gradiente que crea el efecto de destello brillante */
+  background: linear-gradient(
+    90deg, 
+    transparent, 
+    rgba(255, 0, 0, 0.2),    /* Estela tenue */
+    #ff0000,                /* Centro brillante (rojo láser) */
+    rgba(255, 0, 0, 0.2),    /* Estela tenue */
+    transparent
+  );
+  
+  /* Aplicamos la animación */
+  animation: barrido-laser 3s linear infinite;
+  
+  /* Añadimos un brillo extra (glow) */
+  box-shadow: 0 0 10px #ff0000;
+}
+
+/* Definimos el movimiento */
+@keyframes barrido-laser {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100%;
+  }
+}
