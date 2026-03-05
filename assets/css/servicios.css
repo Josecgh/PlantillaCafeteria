@@ -9,8 +9,10 @@
    color: var(--color-blanco);
    border-radius: 1rem;
    padding: 0rem 1rem;
+   overflow: hidden;
+   aspect-ratio: 4 / 5;
 
-   background-size: 150%;
+   background-size: auto 150%;
    background-position: center;
    background-repeat: no-repeat;
 }
@@ -36,19 +38,16 @@
 
 .servicios__card-body {
    overflow: hidden;
-   p {
-      transform: translateY(200px);
-   }
+
+   transform: translateY(200px);
 }
 
 .servicios__card:hover {
-   background-size: 170%;
+   background-size: auto 170%;
    transition: background-size 1s ease-in-out;
    .servicios__card-body {
-      p {
-         transform: translateY(0px);
-         transition: transform 1s ease-out;
-      }
+      transform: translateY(0px);
+      transition: transform 1s ease-out;
    }
 }
 
@@ -59,5 +58,6 @@
 @media (min-width: 800px) {
    .servicios__cards {
       grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
    }
 }
