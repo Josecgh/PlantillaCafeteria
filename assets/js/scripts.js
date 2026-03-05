@@ -30,3 +30,24 @@ openBtn.addEventListener('click', () => {
 
 
 
+
+// Botón "Ir al top"
+(function(){
+    const btn = document.getElementById('btn-top');
+    if (!btn) return;
+
+    const toggleVisibility = () => {
+        if (window.scrollY > 300) btn.classList.add('show');
+        else btn.classList.remove('show');
+    };
+
+    window.addEventListener('scroll', toggleVisibility);
+    document.addEventListener('DOMContentLoaded', toggleVisibility);
+
+    btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+})();
+
+
+
