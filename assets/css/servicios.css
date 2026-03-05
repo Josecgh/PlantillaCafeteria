@@ -10,9 +10,9 @@
    border-radius: 1rem;
    padding: 0rem 1rem;
    overflow: hidden;
-   aspect-ratio: 4 / 5;
+   aspect-ratio: 5 / 3;
 
-   background-size: auto 150%;
+   background-size: auto 100%;
    background-position: center;
    background-repeat: no-repeat;
 }
@@ -39,11 +39,11 @@
 .servicios__card-body {
    overflow: hidden;
 
-   transform: translateY(200px);
+   transform: translateY(400px);
 }
 
 .servicios__card:hover {
-   background-size: auto 170%;
+   background-size: auto 130%;
    transition: background-size 1s ease-in-out;
    .servicios__card-body {
       transform: translateY(0px);
@@ -55,9 +55,14 @@
    color: var(--color-azul);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
    .servicios__cards {
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 1fr;
+      .servicios__card {
+         aspect-ratio: 4 / 5;
+      }
+   }
+   .servicios__card:nth-child(3) {
+      background-image: url(../img/Gemini_laptops-sizeup.PNG);
    }
 }
