@@ -21,13 +21,13 @@
 }
 
 .servicios__card:nth-child(1) {
-   background-image: url(../img/Gemini_coffee_maker.PNG);
+   background-image: url(../img/Gemini_coffee_maker.webp);
 }
 .servicios__card:nth-child(2) {
-   background-image: url(../img/Gemini_heart.PNG);
+   background-image: url(../img/Gemini_heart.webp);
 }
 .servicios__card:nth-child(3) {
-   background-image: url(../img/Gemini_laptops.PNG);
+   background-image: url(../img/Gemini_laptops.webp);
 }
 
 .servicios__card-header {
@@ -56,10 +56,6 @@
    }
 }
 
-.material-symbols-outlined {
-   color: var(--color-azul);
-}
-
 @media (min-width: 700px) {
    .servicios__cards {
       grid-template-columns: repeat(3, 1fr);
@@ -68,6 +64,6 @@
       }
    }
    .servicios__card:nth-child(3) {
-      background-image: url(../img/Gemini_laptops-sizeup.PNG);
+      background-image: url(../img/Gemini_laptops-sizeup.webp);
    }
 }
