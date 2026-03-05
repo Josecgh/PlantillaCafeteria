@@ -44,38 +44,7 @@ from {
     }
 }
 
-hr.laser {
-  border: none;               /* Quitamos el borde por defecto */
-  height: 2px;                /* Grosor de la línea */
-  background: #111;           /* Color de fondo de la línea (la "oscuridad") */
-  position: relative;
-  overflow: hidden;           /* Para que el brillo no se salga de los bordes */
-  border-radius: 5px;
-}
 
-hr.laser::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -150px;               /* Empezamos fuera de la vista a la izquierda */
-  width: 150px;               /* Ancho del "punto de luz" */
-  height: 100%;
-  /* Gradiente que crea el efecto de destello brillante */
-  background: linear-gradient(
-    90deg, 
-    transparent, 
-    rgba(255, 0, 0, 0.2),    /* Estela tenue */
-    #ff0000,                /* Centro brillante (rojo láser) */
-    rgba(255, 0, 0, 0.2),    /* Estela tenue */
-    transparent
-  );
-  
-  /* Aplicamos la animación */
-  animation: barrido-laser 3s linear infinite;
-  
-  /* Añadimos un brillo extra (glow) */
-  box-shadow: 0 0 10px #ff0000;
-}
 
 /* Definimos el movimiento */
 @keyframes barrido-laser {
