@@ -10,7 +10,52 @@
 
 
     }
-    
+    @keyframes flickerAzulOscuro {
+        0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+            0 0 5px var(--color-blanco),
+            0 0 10px var(--color-azul-ocuro),
+            0 0 20px var(--color-azul-ocuro);
+        }
+        20%, 24%, 55% {
+            text-shadow: none;
+        }
+    }
+    @keyframes flickerAzulClaro {
+        0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+            0 0 5px var(--color-blanco),
+            0 0 10px var(--color-azul),
+            0 0 20px var(--color-azul);
+        }
+        20%, 24%, 55% {
+            text-shadow: none;
+        }
+    }
+    @keyframes flickerDorado {
+        0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+            0 0 5px var(--color-blanco),
+            0 0 10px var(--color-dorado),
+            0 0 20px var(--color-dorado);
+        }
+        20%, 24%, 55% {
+            text-shadow: none;
+        }
+    }
+    @keyframes pulsate {
+    from {
+    text-shadow:
+        0 0 5px var(--color-blanco),
+        0 0 10px var(--color-dorado);
+    }
+    to {
+    text-shadow:
+        0 0 10px var(--color-blanco),
+        0 0 20px var(--color-dorado);
+    }
+    }
+
     /* global reset to remove default browser white gaps */
     html, body {
         margin: 0;
@@ -159,12 +204,17 @@
 
     .accent{
         color:var(--color-azul);
+        animation: flickerAzulClaro 1.5s infinite alternate;
     }
+    
     .accent-2{
         color:var(--color-dorado);
+        animation: flickerDorado 1.5s infinite alternate;
     }
+
     .accent-3{
         color:var(--color-azul-ocuro);
+        animation: flickerAzulOscuro 1.5s infinite alternate;
     }
     
 
