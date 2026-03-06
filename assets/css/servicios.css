@@ -71,3 +71,13 @@
       background-image: url(../img/Gemini_laptops-sizeup.webp);
    }
 }
+
+#teams__card_1{
+   background-image: url(../img/3.jpg);
+}
+#teams__card_2{
+   background-image: url(../img/2.jpg);
+}
+#teams__card_3{
+   background-image: url(../img/1.jpg);
+}
