@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Cat</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -24,7 +23,7 @@
 </head>
 <body>
     <header>
-        <img src="assets/img/logo.png" height="65" alt="logo Git Cat">
+        <img src="assets/img/logo.png" class="logo-header" height="65" alt="logo Git Cat">
         <img class="btn-open icon-menu" id="openMenu" src="assets/img/icon-menu.png" alt="menu mobile" width="40">
         <nav class="menu" aria-label="Navegación principal">
             <ul>
@@ -32,6 +31,30 @@
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#equipo">Equipo</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li>
+                    <a id="theme-toggle" class="theme-toggle" href="#" aria-pressed="false" aria-label="Toggle theme">
+                        <span class="theme-icon">
+                            <!-- Sun (light) -->
+                            <svg class="icon icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="12" cy="12" r="4" fill="#FFF"/>
+                                <g stroke="#FFDD57" stroke-width="2" stroke-linecap="round">
+                                    <path d="M12 2v2"/>
+                                    <path d="M12 20v2"/>
+                                    <path d="M4.93 4.93l1.41 1.41"/>
+                                    <path d="M17.66 17.66l1.41 1.41"/>
+                                    <path d="M2 12h2"/>
+                                    <path d="M20 12h2"/>
+                                    <path d="M4.93 19.07l1.41-1.41"/>
+                                    <path d="M17.66 6.34l1.41-1.41"/>
+                                </g>
+                            </svg>
+                            <!-- Moon (dark) -->
+                            <svg class="icon icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" fill="#000"/>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -106,7 +129,7 @@
         </div>
         <div class="spacer"></div>
 
-        <section id="equipo" class="equipo">
+        <section id="Beta" class="Beta">
             <div class="container">
                 <h2><span class="accent">Beta Testing:</span> Open Source Café, Closed Access Coworking</h2>
                 <hr class="laser">
@@ -212,7 +235,7 @@
     </nav>
     <div id="overlay" class="overlay"></div>
     <button id="btn-top" class="btn-top" aria-label="Ir al inicio">
-        <img src="assets/img/paw.png" alt="Ir al inicio">
+        <img src="assets/img/paw.png" id="paw" alt="Ir al inicio">
     </button>
     <script src="assets/js/scripts.js"></script>
 </body>

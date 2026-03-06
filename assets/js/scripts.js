@@ -37,7 +37,7 @@ openBtn.addEventListener('click', () => {
     if (!btn) return;
 
     const toggleVisibility = () => {
-        if (window.scrollY > 300) btn.classList.add('show');
+        if (window.scrollY > 1024) btn.classList.add('show');
         else btn.classList.remove('show');
     };
 
@@ -48,6 +48,28 @@ openBtn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 })();
+
+const btn = document.getElementById('theme-toggle');
+const currentTheme = localStorage.getItem('theme');
+
+// Si el usuario ya tenía una preferencia guardada, aplícala
+if (currentTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+}
+// Ajusta estado inicial de accesibilidad
+if (btn) btn.setAttribute('aria-pressed', document.body.classList.contains('dark-mode'));
+
+btn.addEventListener('click', () => {
+  // Alterna la clase
+    document.body.classList.toggle('dark-mode');
+  // Guarda la elección del usuario
+    let theme = 'light';
+    if (document.body.classList.contains('dark-mode')) {
+    theme = 'dark';
+    }
+    localStorage.setItem('theme', theme);
+        if (btn) btn.setAttribute('aria-pressed', document.body.classList.contains('dark-mode'));
+});
 
 
 

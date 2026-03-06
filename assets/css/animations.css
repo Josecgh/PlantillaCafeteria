@@ -9,6 +9,7 @@
         text-shadow: none;
     }
 }
+
 @keyframes flickerAzulClaro {
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
     text-shadow:
@@ -20,6 +21,7 @@
         text-shadow: none;
     }
 }
+
 @keyframes flickerDorado {
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
     text-shadow:
@@ -31,6 +33,7 @@
         text-shadow: none;
     }
 }
+
 @keyframes pulsate {
 from {
     text-shadow:
@@ -44,14 +47,11 @@ from {
     }
 }
 
-
-
-/* Definimos el movimiento */
 @keyframes barrido-laser {
-  0% {
-    left: -150px;
-  }
-  100% {
-    left: 100%;
-  }
+    0% {
+        left: -150px;
+    }
+    100% {
+        left: 100%;
+    }
 }

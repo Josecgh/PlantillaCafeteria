@@ -1,34 +1,84 @@
     :root{
         --color-marron-oscuro:#473521;
         --color-marron-claro:#5F4B36;
-
         --color-negro:#262626;
         --color-blanco:#F4F2E6;
         --color-azul:#01C1F7;
         --color-azul-ocuro:#0073E6;
         --color-dorado:#FAC660;
 
-
+        /*
+        * light
+        */
+        --body-bg-color:rgba(255, 255, 255, 0.8); 
+        --body-bg-blend-mode:lighten;
+        --accent-animation: none;
+        --accent-2-animation: none;
+        --accent-3-animation: none;
+        --paw-content: url(../img/paw.png);
+        --openMenu-content: url(../img/icon-menu.png);
+        --color-fuente:unset;
+        --logo-header-background-color:unset;
+        --menu-a-color: var(--color-marron-oscuro);
+        --menu-a-hover-color: var(--color-marron-claro);
+        --theme-toggle:Light;
     }
-    
+
+    .dark-mode{
+        /*
+        * Dark
+        */
+        --body-bg-color:rgba(0, 0, 0, 0.9); 
+        --body-bg-blend-mode:darken;
+        --accent-animation: flickerAzulClaro 1.5s infinite alternate;
+        --accent-2-animation: flickerDorado 1.5s infinite alternate;
+        --accent-3-animation: flickerAzulOscuro 1.5s infinite alternate;
+        --paw-content: url(../img/paw-dark.png);
+        --openMenu-content: url(../img/icon-menu-dark.png);
+        --color-fuente:#F4F2E6;
+        --logo-header-background-color: var(--color-blanco);
+        --menu-a-color: var(--color-blanco);
+        --menu-a-hover-color: var(--color-dorado);
+        --theme-toggle:Dark;
+    }
+
+    .theme-toggle{
+        content:var(--theme-toggle);
+    }
+
+    /* Theme toggle icons */
+    .theme-toggle .theme-icon{ display:inline-flex; align-items:center; gap:6px; }
+    .theme-toggle .icon{ display:inline-block; vertical-align:middle; }
+    .theme-toggle .icon-moon{ display:none; }
+    .dark-mode .theme-toggle .icon-moon{ display:inline-block; }
+    .dark-mode .theme-toggle .icon-sun{ display:none; }
+
+    .logo-header{
+        background-color:var(--logo-header-background-color);
+    }
 
     /* global reset to remove default browser white gaps */
-    html, body {
-        margin: 0;
+    html{
+    margin: 0;
         padding: 0;
         height: 100%;
+    }
+    body {
+        color-scheme: light dark;
+
         font-family: "Inter", sans-serif;
         font-style: normal;
         font-weight: 400; 
         font-size: 1rem;
         background-image: url(../img/bg-logos.jpg);
-        background-color: rgba(255, 255, 255, 0.8); 
-        background-blend-mode:lighten;
+        background-color: var(--body-bg-color);
+        background-blend-mode:var(--body-bg-blend-mode);
         cursor: url('../img/cursor.png'), auto;
+        color:var(--color-fuente);
     }
-a:hover, button:hover, #btn-top:hover, .submit-btn:hover, #acceptPrivacy:hover, #openMenu:hover {
-    cursor: url('../img/pointer.png'), pointer;
-}
+    a:hover, button:hover, #btn-top:hover, .submit-btn:hover, #acceptPrivacy:hover, #openMenu:hover {
+        cursor: url('../img/pointer.png'), pointer;
+    }
     h1{
         font-family: "Italiana", sans-serif;
         font-size: 64px;
@@ -82,9 +132,10 @@ a:hover, button:hover, #btn-top:hover, .submit-btn:hover, #acceptPrivacy:hover, 
         padding-right: 20px;
     }
 
-    hr{
-        width: 80%;
-    }
+        hr{
+            width: 80%;
+        }
+
         /* Habilita scroll suave para anclas internas */
         html { scroll-behavior: smooth; }
 
@@ -107,6 +158,7 @@ a:hover, button:hover, #btn-top:hover, .submit-btn:hover, #acceptPrivacy:hover, 
             width: 1.05rem;
             height: 1.05rem;
         }
+
     .hero{
         background-image: url('../img/hero-banner2.jpg');
         background-size: cover;
@@ -150,10 +202,11 @@ a:hover, button:hover, #btn-top:hover, .submit-btn:hover, #acceptPrivacy:hover, 
     }
 
     .menu li  { padding: 15px 0; text-align: center; }
-    .menu a { color: var(--color-marron-oscuro); text-decoration: none; font-size: 1.5rem; }
-    .menu a:hover{ color: var(--color-marron-claro)}
+    .menu a { color: var(--menu-a-color); text-decoration: none; font-size: 1.5rem; }
+    .menu a:hover{ color: var(--menu-a-hover-color); }
 
     #openMenu{
+        content:var(--openMenu-content);
         display: flex;
     }
 
@@ -167,14 +220,17 @@ a:hover, button:hover, #btn-top:hover, .submit-btn:hover, #acceptPrivacy:hover, 
 
     .accent{
         color:var(--color-azul);
+        animation:var(--accent-animation);
     }
 
     .accent-2{
         color:var(--color-dorado);
+        animation:var(--accent-2-animation);
     }
 
     .accent-3{
         color:var(--color-azul-ocuro);
+        animation:var(--accent-3-animation);
     }
     
 
@@ -216,29 +272,28 @@ a:hover, button:hover, #btn-top:hover, .submit-btn:hover, #acceptPrivacy:hover, 
         height: auto;
     }
     
-            .form-group.form-checkbox{
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            flex-wrap: nowrap;
-        }
-        .form-group.form-checkbox label{
-            margin: 0;
-            font-size: 0.95rem;
-        }
-        .form-group.form-checkbox a{
-            color: inherit;
-            text-decoration: underline;
-        }
-        /* Ajuste opcional: tamaño del checkbox */
-        .form-group.form-checkbox input[type="checkbox"]{
-            width: 1.05rem;
-            height: 1.05rem;
-        }
+    .form-group.form-checkbox{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex-wrap: nowrap;
+    }
 
-    
+    .form-group.form-checkbox label{
+        margin: 0;
+        font-size: 0.95rem;
+    }
 
-    
+    .form-group.form-checkbox a{
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    /* Ajuste opcional: tamaño del checkbox */
+    .form-group.form-checkbox input[type="checkbox"]{
+        width: 1.05rem;
+        height: 1.05rem;
+    }
 
 @media (min-width: 800px) {
     /* menu superior */
@@ -330,10 +385,12 @@ a:hover, button:hover, #btn-top:hover, .submit-btn:hover, #acceptPrivacy:hover, 
     transform: none;
     transition: opacity .25s ease;
 }
+
 #btn-top.show{
     opacity: 1;
     pointer-events: auto;
 }
+
 #btn-top img{
     display: block;
     margin: 0;
@@ -342,6 +399,7 @@ a:hover, button:hover, #btn-top:hover, .submit-btn:hover, #acceptPrivacy:hover, 
     height: auto;
     width: auto;
     transition: max-height 0.35s ease, box-shadow 0.25s ease;
+    content:var(--paw-content);
 }
 
 #btn-top:hover img{
@@ -349,11 +407,41 @@ a:hover, button:hover, #btn-top:hover, .submit-btn:hover, #acceptPrivacy:hover, 
 }
 
 @media (prefers-color-scheme: dark) {
-    html, body{
-        background-color: rgba(0, 0, 0, 0.9); 
-        background-blend-mode:darken;
-        color: var(--color-blanco)
+
+    .dark-mode{
+        /*
+        * light
+        
+        --body-bg-color:rgba(255, 255, 255, 0.8); 
+        --body-bg-blend-mode:lighten;
+        --accent-animation: none;
+        --accent-2-animation: none;
+        --accent-3-animation: none;
+        --paw-content: url(../img/paw.png);
+        --openMenu-content: url(../img/icon-menu.png);
+        --color-fuente:unset;
+        --logo-header-background-color:unset;
+        --menu-a-color: var(--color-marron-oscuro);
+        --menu-a-hover-color: var(--color-marron-claro);
+        */
+        /*
+        * Dark
+        */
+        /*
+        --body-bg-color:rgba(0, 0, 0, 0.9); 
+        --body-bg-blend-mode:darken;
+        --accent-animation: flickerAzulClaro 1.5s infinite alternate;
+        --accent-2-animation: flickerDorado 1.5s infinite alternate;
+        --accent-3-animation: flickerAzulOscuro 1.5s infinite alternate;
+        --paw-content: url(../img/paw-dark.png);
+        --openMenu-content: url(../img/icon-menu-dark.png);
+        --color-fuente:#F4F2E6;
+        --logo-header-background-color: var(--color-blanco);
+        --menu-a-color: var(--color-blanco);
+        --menu-a-hover-color: var(--color-dorado);
+        */
     }
+
     hr.laser {
     border: none;               /* Quitamos el borde por defecto */
     height: 2px;                /* Grosor de la línea */
@@ -386,20 +474,4 @@ a:hover, button:hover, #btn-top:hover, .submit-btn:hover, #acceptPrivacy:hover, 
     /* Añadimos un brillo extra (glow) */
     box-shadow: 0 0 10px #ff0000;
     }
-
-    .accent{
-        color:var(--color-azul);
-        animation: flickerAzulClaro 1.5s infinite alternate;
-    }
-
-    .accent-2{
-        color:var(--color-dorado);
-        animation: flickerDorado 1.5s infinite alternate;
-    }
-
-    .accent-3{
-        color:var(--color-azul-ocuro);
-        animation: flickerAzulOscuro 1.5s infinite alternate;
-    }
-
 }
