@@ -92,11 +92,12 @@ PlantillaCafeteria/
 
 | Nombre | Rol |
 
-Alex lakovlev    - Creacion de sistemas de diseño, Seccion de servicios
-Francisco Javier - Seccion de equipo 
-Jose Luis        - Seccion de contacto 
+Alex lakovlev    - Creacion de sistemas de diseño, Seccion de servicios y creacion de estructuras cards
+Francisco Javier - Seccion de equipo, creacion de imagenes por ia 
+Jose Luis        - Seccion de contacto, menu lateral
 Daniel Molina    - Namevagion, hero, quienes somos, mobile, etc
 
+animaciones, dark mode, extras de css a cargo del equipo
 ---
 
 ## Enlace al Proyecto
