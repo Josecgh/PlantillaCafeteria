@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="assets/css/servicios.css">
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="assets/css/sidebar.css">
-    <link rel="stylesheet" href="./assets/css/servicios.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="GitCat: coworking con café de especialidad y gatos rescatados para desarrolladores.">
+    <meta property="og:title" content="GitCat — Café & Coworking para devs">
+    <meta property="og:description" content="GitCat: coworking con café de especialidad y gatos rescatados para desarrolladores.">
+    <meta property="og:image" content="assets/img/2.jpg">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
@@ -32,7 +36,7 @@
                 <li><a href="#equipo">Equipo</a></li>
                 <li><a href="#contacto">Contacto</a></li>
                 <li>
-                    <a id="theme-toggle" class="theme-toggle" href="#" aria-label="Toggle theme">
+                    <a id="theme-toggle" class="theme-toggle" href="#" aria-label="Cambiar tema">
                         <span class="theme-icon">
                             <!-- Sun (light) -->
                             <svg class="icon icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -78,14 +82,16 @@
                 de cuatro patas. Desde el control de calidad de nuestros granos de café hasta la gestión de nuestra
                 comunidad gatuna, trabajamos en el <span class="accent-3">Core</span> de lo que importa: que programes
                 mejor, rodeado de quienes más saben de relajación.</p>
-                <img src="assets/img/Gemini_Generated_Image_wv9p48wv9p48wv9p.jpg" alt="cafe con gatos" width="651"
+                <figure>
+                    <img src="assets/img/Gemini_Generated_Image_wv9p48wv9p48wv9p.jpg" alt="cafe con gatos" width="651"
                 height="355">
+                </figure>
             </div>
         </section>
         <div class="spacer"></div>
         <!-- <section id="servicios" class="servicios"> -->
-        <div class="container">
-            <section id="servicios">
+        <section id="servicios" class="servicios">
+    <div class="container">
                 <h2>¿Qué hacemos?</h2>
                     <p>Detectamos que trabajar desde casa a menudo resulta en <span class="accent-3">Memory Leaks</span> de atención y aislamiento social. Nuestra solución: un espacio de trabajo con fibra simétrica y una comunidad de gatos rescatados que actúan como balanceadores de carga para tu estrés.</p>
                     <p>Desde la primera taza de café hasta el último <span class="accent-3">commit</span> de la tarde, proporcionamos las herramientas necesarias para que tu cerebro compile sin errores, en un ambiente diseñado por y para desarrolladores.</p>
@@ -125,10 +131,10 @@
                         </div>
                     </div>
                 </div>
-                <img src="assets/img/Gemini_Generated_Image_xgtam3xgtam3xgta.jpg" alt="Cat debuging" width="651"
-                height="355">
-            </section>
-        </div>
+                <figure><img src="assets/img/Gemini_Generated_Image_xgtam3xgtam3xgta.jpg" alt="Cat debuging" width="651"
+                height="355"></figure>
+            </div>
+        </section>
         <div class="spacer"></div>
 
         <section id="equipo" class="equipo">
@@ -214,15 +220,15 @@
                 </figure>
             </div>
         </section>
- <div class="spacer"></div>
+        <div class="spacer"></div>
 
         <section id="Beta" class="Beta">
             <div class="container">
                 <h2><span class="accent">Beta Testing:</span> Open Source Café, Closed Access Coworking</h2>
                 <hr class="laser">
                 <p>Estamos en pleno despliegue. Mientras nuestra barra de café está abierta para que cualquier dev venga a por su dosis de cafeína, el área de membresías está recibiendo sus últimos commits. El acceso al coworking será restringido para garantizar que el Uptime de tu concentración sea del 100%. Suscríbete para ser notificado cuando hagamos el merge a main.</p>
-                <img src="assets/img/opensourcecafe.png" alt="Cat debuging" width="651"
-                height="355">
+                <figure><img src="assets/img/opensourcecafe.png" alt="Cat debuging" width="651"
+                height="355"></figure>
             </div>
         </section>
     </main>
@@ -232,7 +238,7 @@
             <hr  class="laser">
             <p>Recibe actualizaciones sobre nuevos gatos, eventos de <span class="accent">networking</span> y promociones
                 de "Happy Hour" para cuando el <span class="accent">deploy</span> sale mal.</p>
-            <form id="contactenos" class="form-container">
+            <form  action="#" id="contactenos" class="form-container">
                 <div class="form-group">
                 <label for="name">Nombre</label>
                 <input type="text" id="name" name="name" placeholder="Tu nombre" required>
@@ -254,9 +260,8 @@
     </footer>
     <nav id="sidebar" class="sidebar">
         <button id="closeMenu" class="btn-close">×</button>
-
         <ul class="menu-links-sidebar">
-            <li><img src="assets/img/logo.png" width="100" alt="logo Git Cat"> </li>
+            <li><a href="#inicio"><img src="assets/img/logo.png" width="100" alt="logo Git Cat"></a></li>
             <li><a href="#nosotros">Quiénes somos</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#equipo">Equipo</a></li>
@@ -264,9 +269,7 @@
             <li>
                 <hr class="laser">
             </li>
-            <li>
-                <p>El primer espacio de coworking donde el Pair Programming se hace con cuatro patas.</p>
-            </li>
+            <li><p id="beta">El primer espacio de coworking donde el Pair Programming se hace con cuatro patas.</p></li>
         </ul>
     </nav>
     <div id="overlay" class="overlay"></div>

@@ -71,7 +71,9 @@
       background-image: url(../img/Gemini_laptops-sizeup.webp);
    }
 }
-
+.sidebar p{
+   color: unset;
+}
 #teams__card_1{
    background-image: url(../img/3.jpg);
 }
