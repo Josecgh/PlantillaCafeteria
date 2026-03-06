@@ -154,6 +154,11 @@
             color: inherit;
             text-decoration: underline;
         }
+        
+        input[type="text"]{
+            background-color: var(--color-blanco);    
+        }
+        
         .form-group.form-checkbox input[type="checkbox"]{
             width: 1.05rem;
             height: 1.05rem;
@@ -406,28 +411,36 @@
     max-height: calc(100px + 50px);
 }
 
-@media (prefers-color-scheme: dark) {
+/* aplicar estilo laser cuando esté activado el modo oscuro via .dark-mode */
+    .dark-mode hr.laser {
+        border: none;
+        height: 2px;
+        background: #111;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+    }
 
-    .dark-mode{
-        /*
-        * light
-        
-        --body-bg-color:rgba(255, 255, 255, 0.8); 
-        --body-bg-blend-mode:lighten;
-        --accent-animation: none;
-        --accent-2-animation: none;
-        --accent-3-animation: none;
-        --paw-content: url(../img/paw.png);
-        --openMenu-content: url(../img/icon-menu.png);
-        --color-fuente:unset;
-        --logo-header-background-color:unset;
-        --menu-a-color: var(--color-marron-oscuro);
-        --menu-a-hover-color: var(--color-marron-claro);
-        */
+    .dark-mode hr.laser::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -150px;
+        width: 150px;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,0,0,0.2), #ff0000, rgba(255,0,0,0.2), transparent);
+        animation: barrido-laser 3s linear infinite;
+        box-shadow: 0 0 10px #ff0000;
+    }
+
+@media (prefers-color-scheme: dark) {
+    .theme-toggle{
+        display: none;
+    }
+    :root{
         /*
         * Dark
         */
-        /*
         --body-bg-color:rgba(0, 0, 0, 0.9); 
         --body-bg-blend-mode:darken;
         --accent-animation: flickerAzulClaro 1.5s infinite alternate;
@@ -439,39 +452,39 @@
         --logo-header-background-color: var(--color-blanco);
         --menu-a-color: var(--color-blanco);
         --menu-a-hover-color: var(--color-dorado);
-        */
+        --theme-toggle:Dark;
     }
+    
+    
 
     hr.laser {
-    border: none;               /* Quitamos el borde por defecto */
-    height: 2px;                /* Grosor de la línea */
-    background: #111;           /* Color de fondo de la línea (la "oscuridad") */
-    position: relative;
-    overflow: hidden;           /* Para que el brillo no se salga de los bordes */
-    border-radius: 5px;
+        border: none;               /* Quitamos el borde por defecto */
+        height: 2px;                /* Grosor de la línea */
+        background: #111;           /* Color de fondo de la línea (la "oscuridad") */
+        position: relative;
+        overflow: hidden;           /* Para que el brillo no se salga de los bordes */
+        border-radius: 5px;
     }
 
-    hr.laser::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -150px;               /* Empezamos fuera de la vista a la izquierda */
-    width: 150px;               /* Ancho del "punto de luz" */
-    height: 100%;
-    /* Gradiente que crea el efecto de destello brillante */
-    background: linear-gradient(
-        90deg, 
-        transparent, 
-        rgba(255, 0, 0, 0.2),    /* Estela tenue */
-        #ff0000,                /* Centro brillante (rojo láser) */
-        rgba(255, 0, 0, 0.2),    /* Estela tenue */
-        transparent
-    );
-    
-    /* Aplicamos la animación */
-    animation: barrido-laser 3s linear infinite;
-    
-    /* Añadimos un brillo extra (glow) */
-    box-shadow: 0 0 10px #ff0000;
+    hr.laser::after { 
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -150px;               /* Empezamos fuera de la vista a la izquierda */
+        width: 150px;               /* Ancho del "punto de luz" */
+        height: 100%;
+        /* Gradiente que crea el efecto de destello brillante */
+        background: linear-gradient(
+            90deg, 
+            transparent, 
+            rgba(255, 0, 0, 0.2),    /* Estela tenue */
+            #ff0000,                /* Centro brillante (rojo láser) */
+            rgba(255, 0, 0, 0.2),    /* Estela tenue */
+            transparent
+        );
+        /* Aplicamos la animación */
+        animation: barrido-laser 3s linear infinite;
+        /* Añadimos un brillo extra (glow) */
+        box-shadow: 0 0 10px #ff0000;
     }
 }
