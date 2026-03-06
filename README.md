@@ -60,7 +60,7 @@ GitCat nace de la necesidad de un entorno de trabajo más humano para programado
    # Usar la extensión Live Server
    ```
 
-4. Abrir en el navegador: `http://localhost:8080`
+4. Abrir en el navegador: `http://localhost:8080` o en el puerto indicado
 
 ---
 
