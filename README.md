@@ -103,7 +103,7 @@ animaciones, dark mode, extras de css a cargo del equipo
 ## Enlace al Proyecto
 Publicado : [https://josecgh.github.io/PlantillaCafeteria/](https://josecgh.github.io/PlantillaCafeteria/)
 
-Repositorio: [https://github.com/Josecgh/PlantillaCafeteria](https://github.com/Josecgh/PlantillaCafeteria)
+Repositorio: [https://github.com/Josecgh/PlantillaCafeteria](https://github.com/Josecgh/PlantillaCafeteria.git)
 
 ---
 
